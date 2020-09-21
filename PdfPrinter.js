@@ -4,6 +4,7 @@ const iconv = require("iconv-lite");
 const puppeteer = require('puppeteer-core');
 const cheerio = require('cheerio');
 const PDFMerger = require('pdf-merger-js');
+const process = require('process');
 const chromePath = "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe";
 
 class PdfPrinter {
@@ -20,7 +21,7 @@ class PdfPrinter {
         this.debug = true;
         this.hasDirtyElement = true;
         this.visible_node = "";
-        this.invisible_node_children=[];
+        this.invisible_node_children = [];
     }
     setEntryCss(css_container, css_level_one, css_level_two) {
         this.css_container = css_container;
@@ -30,7 +31,7 @@ class PdfPrinter {
     setVisibleNode(visible_node) {
         this.visible_node = visible_node;
     }
-    setInvisibleNodeChildren(invisible_node_children){
+    setInvisibleNodeChildren(invisible_node_children) {
         this.invisible_node_children = invisible_node_children;
     }
     setNoDirtyElement() {
@@ -98,26 +99,43 @@ class PdfPrinter {
             }
             let regex = /\//g; //解决特殊字符问题
             let chapter_name = chapters[i].name.replace(regex, "_")
-            await this.printPage(browser, url, elementId.toLowerCase(), chapter_name);
+            await this.printPage(browser, url, chapter_name);
             await this.sleep(1000);
         }
     }
-    async printPage(browser, url, elementId, filename) {
-        console.log(">>>>>> in print " + filename + ".pdf");
+    async printPage(browser, url, filename) {
+        console.log(">>>>> 正在打印 " + filename + ".pdf");
         const page = await browser.newPage();
         await page.goto(url, { waitUntil: 'networkidle2' });
         await page.emulateMediaType('screen');
         if (this.hasDirtyElement) {
-            console.log("REMOVE DIRTY ELEMENTS");
-            console.log("elementId: ", elementId);
-            await page.evaluate((visibleElementId) => {
-                let elements = document.querySelector('body').children;
+            await page.evaluate((visible_node, invisible_node_children) => {
+                console.log("REMOVE DIRTY ELEMENTS");
+                console.log("VISIBLE_NODE ", visible_node);
+                console.log("INVISIBLE_NODE_CHILDREN ", invisible_node_children);
+                const elements = document.querySelector('body').children;
+                let isId = visible_node.substr(0, 1) == '#' ? true : false;
+                let visible_node_id = visible_node.substring(1);
                 for (let i = 0; i < elements.length; i++) {
-                    if (elements[i].id != visibleElementId) {
-                        elements[i].style.display = 'none';
+                    if (isId) {
+                        if (elements[i].id != visible_node_id) {
+                            elements[i].style.display = 'none';
+                        } else {
+                            for (let j = 0; j < invisible_node_children.length; j++) {
+                                //let childIsId = invisible_node_children[j].substr(0, 1) == '#' ? true : false;
+                                let child = document.querySelector(invisible_node_children[j]);
+                                console.log(invisible_node_children[j]);
+                                console.log(child);
+                                // if (child != undefined) {
+                                //     child.sytle.display = 'none';
+                                // }
+                            }
+                        }
                     }
                 }
-            }, elementId);
+            }, this.visible_node, this.invisible_node_children);
+            console.log(this.visible_node, this.invisible_node_children);
+            // page.on('console', msg => console.log(msg.text()));
         }
         await page.pdf({
             path: "./temp/" + filename + '.pdf',
@@ -133,16 +151,38 @@ class PdfPrinter {
             if (data[i].name == 'Index') {
                 continue;
             }
-            merger.add("./temp/" + data[i].name + '.pdf');
+            if (data[i].href == '') {
+                continue;
+            }
+            let regex = /\//g; //解决特殊字符问题
+            let chapter_name = data[i].name.replace(regex, "_")
+            merger.add("./temp/" + chapter_name + '.pdf');
         }
         await merger.save('./ebooks/' + fileName + '.pdf');
     }
 
-    removeDirtyElements(elementId) {
-        const elements = document.querySelector('body').children;
-        for (let i = 0; i < elements.length; i++) {
-            if (elements[i].id != elementId) {
-                elements[i].style.display = 'none';
+    removeDirtyElements() {
+        if (this.hasDirtyElement) {
+            console.log("REMOVE DIRTY ELEMENTS");
+            console.log("VISIBLE_NODE ", this.visible_node);
+            console.log("INVISIBLE_NODE_CHILDREN ", this.invisible_node_children);
+            const elements = document.querySelector('body').children;
+            let isId = this.visible_node.substr(0, 1) == '#' ? true : false;
+            let visible_node_id = this.visible_node.substring(1);
+            for (let i = 0; i < elements.length; i++) {
+                if (isId) {
+                    if (elements[i].id != visible_node_id) {
+                        elements[i].style.display = 'none';
+                    } else {
+                        for (let j = 0; j < this.invisible_node_children.length; j++) {
+                            let childIsId = this.invisible_node_children[i].substr(0, 1) == '#' ? true : false;
+                            if (childIsId) {
+                                document.querySelector(childIsId).style.display = 'none';
+                            }
+                        }
+                    }
+                }
+
             }
         }
     }
