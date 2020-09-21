@@ -1,0 +1,314 @@
+[
+    {
+        "name": "发行说明",
+        "href": "",
+        "level": 0,
+        "children": [
+            {
+                "name": "Apache 2.3/2.4 的新特性",
+                "href": "https://httpd.apache.org/docs/trunk/zh-cn/new_features_2_4.html",
+                "level": 1,
+                "children": []
+            },
+            {
+                "name": "Apache 2.1/2.2 的新特性",
+                "href": "https://httpd.apache.org/docs/trunk/zh-cn/new_features_2_2.html",
+                "level": 1,
+                "children": []
+            },
+            {
+                "name": "Apache 2.0 的新特性",
+                "href": "https://httpd.apache.org/docs/trunk/zh-cn/new_features_2_0.html",
+                "level": 1,
+                "children": []
+            },
+            {
+                "name": "从 2.2 升级到 2.4",
+                "href": "https://httpd.apache.org/docs/trunk/zh-cn/upgrading.html",
+                "level": 1,
+                "children": []
+            },
+            {
+                "name": "Apache 许可证",
+                "href": "https://httpd.apache.org/docs/trunk/zh-cn/license.html",
+                "level": 1,
+                "children": []
+            }
+        ]
+    },
+    {
+        "name": "参考手册",
+        "href": "",
+        "level": 0,
+        "children": [
+            {
+                "name": "编译与安装",
+                "href": "https://httpd.apache.org/docs/trunk/zh-cn/install.html",
+                "level": 1,
+                "children": []
+            },
+            {
+                "name": "启动",
+                "href": "https://httpd.apache.org/docs/trunk/zh-cn/invoking.html",
+                "level": 1,
+                "children": []
+            },
+            {
+                "name": "停止与重启",
+                "href": "https://httpd.apache.org/docs/trunk/zh-cn/stopping.html",
+                "level": 1,
+                "children": []
+            },
+            {
+                "name": "配置指令",
+                "href": "https://httpd.apache.org/docs/trunk/zh-cn/mod/directives.html",
+                "level": 1,
+                "children": []
+            },
+            {
+                "name": "指令快速参考",
+                "href": "https://httpd.apache.org/docs/trunk/zh-cn/mod/quickreference.html",
+                "level": 1,
+                "children": []
+            },
+            {
+                "name": "模块",
+                "href": "https://httpd.apache.org/docs/trunk/zh-cn/mod/",
+                "level": 1,
+                "children": []
+            },
+            {
+                "name": "多处理模块(MPM)",
+                "href": "https://httpd.apache.org/docs/trunk/zh-cn/mpm.html",
+                "level": 1,
+                "children": []
+            },
+            {
+                "name": "过滤器",
+                "href": "https://httpd.apache.org/docs/trunk/zh-cn/filter.html",
+                "level": 1,
+                "children": []
+            },
+            {
+                "name": "处理器",
+                "href": "https://httpd.apache.org/docs/trunk/zh-cn/handler.html",
+                "level": 1,
+                "children": []
+            },
+            {
+                "name": "表达式解析器",
+                "href": "https://httpd.apache.org/docs/trunk/zh-cn/expr.html",
+                "level": 1,
+                "children": []
+            },
+            {
+                "name": "服务器与支持程序",
+                "href": "https://httpd.apache.org/docs/trunk/zh-cn/programs/",
+                "level": 1,
+                "children": []
+            },
+            {
+                "name": "术语",
+                "href": "https://httpd.apache.org/docs/trunk/zh-cn/glossary.html",
+                "level": 1,
+                "children": []
+            }
+        ]
+    },
+    {
+        "name": "用户指南",
+        "href": "",
+        "level": 0,
+        "children": [
+            {
+                "name": "绑定指定地址与端口",
+                "href": "https://httpd.apache.org/docs/trunk/zh-cn/bind.html",
+                "level": 1,
+                "children": []
+            },
+            {
+                "name": "配置文件",
+                "href": "https://httpd.apache.org/docs/trunk/zh-cn/configuring.html",
+                "level": 1,
+                "children": []
+            },
+            {
+                "name": "配置片段",
+                "href": "https://httpd.apache.org/docs/trunk/zh-cn/sections.html",
+                "level": 1,
+                "children": []
+            },
+            {
+                "name": "缓存指南",
+                "href": "https://httpd.apache.org/docs/trunk/zh-cn/caching.html",
+                "level": 1,
+                "children": []
+            },
+            {
+                "name": "内容协商",
+                "href": "https://httpd.apache.org/docs/trunk/zh-cn/content-negotiation.html",
+                "level": 1,
+                "children": []
+            },
+            {
+                "name": "动态共享对象(DSO)",
+                "href": "https://httpd.apache.org/docs/trunk/zh-cn/dso.html",
+                "level": 1,
+                "children": []
+            },
+            {
+                "name": "环境变量",
+                "href": "https://httpd.apache.org/docs/trunk/zh-cn/env.html",
+                "level": 1,
+                "children": []
+            },
+            {
+                "name": "日志文件",
+                "href": "https://httpd.apache.org/docs/trunk/zh-cn/logs.html",
+                "level": 1,
+                "children": []
+            },
+            {
+                "name": "从 URL 映射到文件系统",
+                "href": "https://httpd.apache.org/docs/trunk/zh-cn/urlmapping.html",
+                "level": 1,
+                "children": []
+            },
+            {
+                "name": "性能调谐",
+                "href": "https://httpd.apache.org/docs/trunk/zh-cn/misc/perf-tuning.html",
+                "level": 1,
+                "children": []
+            },
+            {
+                "name": "安全技巧",
+                "href": "https://httpd.apache.org/docs/trunk/zh-cn/misc/security_tips.html",
+                "level": 1,
+                "children": []
+            },
+            {
+                "name": "服务器全局配置",
+                "href": "https://httpd.apache.org/docs/trunk/zh-cn/server-wide.html",
+                "level": 1,
+                "children": []
+            },
+            {
+                "name": "SSL/TLS 加密",
+                "href": "https://httpd.apache.org/docs/trunk/zh-cn/ssl/",
+                "level": 1,
+                "children": []
+            },
+            {
+                "name": "执行 CGI 前的用户切换(suEXEC)",
+                "href": "https://httpd.apache.org/docs/trunk/zh-cn/suexec.html",
+                "level": 1,
+                "children": []
+            },
+            {
+                "name": "URL 改写与 mod_rewrite",
+                "href": "https://httpd.apache.org/docs/trunk/zh-cn/rewrite/",
+                "level": 1,
+                "children": []
+            },
+            {
+                "name": "虚拟主机",
+                "href": "https://httpd.apache.org/docs/trunk/zh-cn/vhosts/",
+                "level": 1,
+                "children": []
+            }
+        ]
+    },
+    {
+        "name": "指引/教程",
+        "href": "",
+        "level": 0,
+        "children": [
+            {
+                "name": "认证，授权与访问控制",
+                "href": "https://httpd.apache.org/docs/trunk/zh-cn/howto/auth.html",
+                "level": 1,
+                "children": []
+            },
+            {
+                "name": "CGI 与动态内容",
+                "href": "https://httpd.apache.org/docs/trunk/zh-cn/howto/cgi.html",
+                "level": 1,
+                "children": []
+            },
+            {
+                "name": ".htaccess 文件",
+                "href": "https://httpd.apache.org/docs/trunk/zh-cn/howto/htaccess.html",
+                "level": 1,
+                "children": []
+            },
+            {
+                "name": "服务器端插入(SSI)",
+                "href": "https://httpd.apache.org/docs/trunk/zh-cn/howto/ssi.html",
+                "level": 1,
+                "children": []
+            },
+            {
+                "name": "用户私人网站目录(public_html)",
+                "href": "https://httpd.apache.org/docs/trunk/zh-cn/howto/public_html.html",
+                "level": 1,
+                "children": []
+            }
+        ]
+    },
+    {
+        "name": "平台相关说明",
+        "href": "",
+        "level": 0,
+        "children": [
+            {
+                "name": "Microsoft Windows",
+                "href": "https://httpd.apache.org/docs/trunk/zh-cn/platform/windows.html",
+                "level": 1,
+                "children": []
+            },
+            {
+                "name": "Novell NetWare",
+                "href": "https://httpd.apache.org/docs/trunk/zh-cn/platform/netware.html",
+                "level": 1,
+                "children": []
+            }
+        ]
+    },
+    {
+        "name": "其它主题",
+        "href": "",
+        "level": 0,
+        "children": [
+            {
+                "name": "常见问题",
+                "href": "http://wiki.apache.org/httpd/FAQ",
+                "level": 1,
+                "children": []
+            },
+            {
+                "name": "网站导航",
+                "href": "https://httpd.apache.org/docs/trunk/zh-cn/sitemap.html",
+                "level": 1,
+                "children": []
+            },
+            {
+                "name": "开发文档",
+                "href": "https://httpd.apache.org/docs/trunk/zh-cn/developer/",
+                "level": 1,
+                "children": []
+            },
+            {
+                "name": "其它说明",
+                "href": "https://httpd.apache.org/docs/trunk/zh-cn/misc/",
+                "level": 1,
+                "children": []
+            },
+            {
+                "name": "维基",
+                "href": "http://wiki.apache.org/httpd/",
+                "level": 1,
+                "children": []
+            }
+        ]
+    }
+]
