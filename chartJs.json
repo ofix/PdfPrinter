@@ -1,0 +1,226 @@
+[
+    {
+        "href": "https://www.chartjs.org",
+        "name": "Chart.js"
+    },
+    {
+        "href": "https://www.chartjs.org./",
+        "name": "Introduction"
+    },
+    {
+        "href": "https://www.chartjs.orggetting-started/",
+        "name": "Getting Started"
+    },
+    {
+        "href": "https://www.chartjs.orggetting-started/installation.html",
+        "name": "Installation"
+    },
+    {
+        "href": "https://www.chartjs.orggetting-started/integration.html",
+        "name": "Integration"
+    },
+    {
+        "href": "https://www.chartjs.orggetting-started/usage.html",
+        "name": "Usage"
+    },
+    {
+        "href": "https://www.chartjs.orggeneral/",
+        "name": "General"
+    },
+    {
+        "href": "https://www.chartjs.orggeneral/accessibility.html",
+        "name": "Accessibility"
+    },
+    {
+        "href": "https://www.chartjs.orggeneral/responsive.html",
+        "name": "Responsive"
+    },
+    {
+        "href": "https://www.chartjs.orggeneral/device-pixel-ratio.html",
+        "name": "Pixel Ratio"
+    },
+    {
+        "href": "https://www.chartjs.orggeneral/interactions/",
+        "name": "Interactions"
+    },
+    {
+        "href": "https://www.chartjs.orggeneral/interactions/events.html",
+        "name": "Events"
+    },
+    {
+        "href": "https://www.chartjs.orggeneral/interactions/modes.html",
+        "name": "Modes"
+    },
+    {
+        "href": "https://www.chartjs.orggeneral/options.html",
+        "name": "Options"
+    },
+    {
+        "href": "https://www.chartjs.orggeneral/colors.html",
+        "name": "Colors"
+    },
+    {
+        "href": "https://www.chartjs.orggeneral/fonts.html",
+        "name": "Fonts"
+    },
+    {
+        "href": "https://www.chartjs.orggeneral/performance.html",
+        "name": "Performance"
+    },
+    {
+        "href": "https://www.chartjs.orgconfiguration/",
+        "name": "Configuration"
+    },
+    {
+        "href": "https://www.chartjs.orgconfiguration/animations.html",
+        "name": "Animations"
+    },
+    {
+        "href": "https://www.chartjs.orgconfiguration/layout.html",
+        "name": "Layout"
+    },
+    {
+        "href": "https://www.chartjs.orgconfiguration/legend.html",
+        "name": "Legend"
+    },
+    {
+        "href": "https://www.chartjs.orgconfiguration/title.html",
+        "name": "Title"
+    },
+    {
+        "href": "https://www.chartjs.orgconfiguration/tooltip.html",
+        "name": "Tooltip"
+    },
+    {
+        "href": "https://www.chartjs.orgconfiguration/elements.html",
+        "name": "Elements"
+    },
+    {
+        "href": "https://www.chartjs.orgcharts/",
+        "name": "Charts"
+    },
+    {
+        "href": "https://www.chartjs.orgcharts/line.html",
+        "name": "Line"
+    },
+    {
+        "href": "https://www.chartjs.orgcharts/bar.html",
+        "name": "Bar"
+    },
+    {
+        "href": "https://www.chartjs.orgcharts/radar.html",
+        "name": "Radar"
+    },
+    {
+        "href": "https://www.chartjs.orgcharts/doughnut.html",
+        "name": "Doughnut & Pie"
+    },
+    {
+        "href": "https://www.chartjs.orgcharts/polar.html",
+        "name": "Polar Area"
+    },
+    {
+        "href": "https://www.chartjs.orgcharts/bubble.html",
+        "name": "Bubble"
+    },
+    {
+        "href": "https://www.chartjs.orgcharts/scatter.html",
+        "name": "Scatter"
+    },
+    {
+        "href": "https://www.chartjs.orgcharts/area.html",
+        "name": "Area"
+    },
+    {
+        "href": "https://www.chartjs.orgcharts/mixed.html",
+        "name": "Mixed"
+    },
+    {
+        "href": "https://www.chartjs.orgaxes/",
+        "name": "Axes"
+    },
+    {
+        "href": "https://www.chartjs.orgaxes/cartesian/",
+        "name": "Cartesian"
+    },
+    {
+        "href": "https://www.chartjs.orgaxes/cartesian/category.html",
+        "name": "Category"
+    },
+    {
+        "href": "https://www.chartjs.orgaxes/cartesian/linear.html",
+        "name": "Linear"
+    },
+    {
+        "href": "https://www.chartjs.orgaxes/cartesian/logarithmic.html",
+        "name": "Logarithmic"
+    },
+    {
+        "href": "https://www.chartjs.orgaxes/cartesian/time.html",
+        "name": "Time"
+    },
+    {
+        "href": "https://www.chartjs.orgaxes/radial/",
+        "name": "Radial"
+    },
+    {
+        "href": "https://www.chartjs.orgaxes/radial/linear.html",
+        "name": "Linear"
+    },
+    {
+        "href": "https://www.chartjs.orgaxes/labelling.html",
+        "name": "Labelling"
+    },
+    {
+        "href": "https://www.chartjs.orgaxes/styling.html",
+        "name": "Styling"
+    },
+    {
+        "href": "https://www.chartjs.orgdevelopers/",
+        "name": "Developers"
+    },
+    {
+        "href": "https://www.chartjs.orgdevelopers/api.html",
+        "name": "Chart.js API"
+    },
+    {
+        "href": "https://www.chartjs.orgdevelopers/updates.html",
+        "name": "Updating Charts"
+    },
+    {
+        "href": "https://www.chartjs.orgdevelopers/plugins.html",
+        "name": "Plugins"
+    },
+    {
+        "href": "https://www.chartjs.orgdevelopers/charts.html",
+        "name": "New Charts"
+    },
+    {
+        "href": "https://www.chartjs.orgdevelopers/axes.html",
+        "name": "New Axes"
+    },
+    {
+        "href": "https://www.chartjs.orgdevelopers/contributing.html",
+        "name": "Contributing"
+    },
+    {
+        "href": "https://www.chartjs.orgnotes/",
+        "name": "Additional Notes"
+    },
+    {
+        "href": "https://www.chartjs.orgnotes/comparison.html",
+        "name": "Comparison Table"
+    },
+    {
+        "href": "https://www.chartjs.orgnotes/extensions.html",
+        "name": "Popular Extensions"
+    },
+    {
+        "href": "https://www.chartjs.orgnotes/license.html",
+        "name": "License"
+    },
+    {
+        "href": "https://www.gitbook.com",
+        "name": "Published with GitBook"
+    }
+]

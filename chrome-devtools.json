@@ -1,0 +1,403 @@
+[
+
+    {
+        "href": "https://developers.google.com/web/fundamentals",
+        "name": "Fundamentals"
+    },
+    {
+        "href": "https://developers.google.com/web/tools",
+        "name": "Tools"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools",
+        "name": "Guides"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/updates",
+        "name": "What's new"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/blog",
+        "name": "Engineering blog"
+    },
+    {
+        "href": "https://developers.google.com/web/updates",
+        "name": "Updates"
+    },
+    {
+        "href": "https://developers.google.com/web/showcase",
+        "name": "Case Studies"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools",
+        "name": "Home"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/open",
+        "name": "Open DevTools"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/css",
+        "name": "Get Started with Viewing and Changing CSS"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/css/reference",
+        "name": "CSS Reference"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/coverage",
+        "name": "Find Unused CSS"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/inspect-styles/animations",
+        "name": "Inspect Animations"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/inspect-styles/edit-styles",
+        "name": "Edit Styles"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/css/print-preview",
+        "name": "Force DevTools Into Print Preview Mode"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/console",
+        "name": "Overview"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/console/log",
+        "name": "Log Messages"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/console/javascript",
+        "name": "Run JavaScript"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/console/reference",
+        "name": "Reference"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/console/api",
+        "name": "API Reference"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/console/utilities",
+        "name": "Utilities API Reference"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/console/live-expressions",
+        "name": "Live Expressions"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/console/console-write",
+        "name": "Diagnose and Log to the Console"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/console/structured-data",
+        "name": "Compare Similar Data Objects"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/console/track-executions",
+        "name": "Measure and Count Executions"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/console/track-exceptions",
+        "name": "Handle Exceptions and Errors"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/console/expressions",
+        "name": "Evaluate Expressions"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/console/events",
+        "name": "Monitor Events"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/network",
+        "name": "Get Started"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/network/issues",
+        "name": "Network Issues Guide"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/network/reference",
+        "name": "Reference"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/network/resource-loading",
+        "name": "Resource Loading"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/storage/cookies",
+        "name": "Cookies"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/storage/localstorage",
+        "name": "Local Storage"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/storage/indexeddb",
+        "name": "IndexedDB"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/storage/sessionstorage",
+        "name": "Session Storage"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/storage/applicationcache",
+        "name": "Application Cache"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/storage/websql",
+        "name": "Web SQL"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/storage/cache",
+        "name": "Cache"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/manage-data/local-storage",
+        "name": "Inspect and Manage Storage, Databases, and Caches"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/issues",
+        "name": "Issues"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/command-menu",
+        "name": "Command Menu"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/device-mode",
+        "name": "Overview"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/device-mode/testing-other-browsers",
+        "name": "Emulate and Test Other Browsers"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/device-mode/override-user-agent",
+        "name": "Override The User Agent String"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/device-mode/geolocation",
+        "name": "Override Geolocation"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/device-mode/orientation",
+        "name": "Simulate Device Orientation"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/device-mode/emulate-mobile-viewports",
+        "name": "Test Responsive and Device-Specific Viewports"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/device-mode/device-input-and-sensors",
+        "name": "Emulate Geolocation and Accelerometer Sensors"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/dom",
+        "name": "Get Started"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/inspect-styles",
+        "name": "DOM Guide"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/inspect-styles/edit-dom",
+        "name": "Edit the DOM"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/javascript",
+        "name": "Get Started"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/javascript/breakpoints",
+        "name": "Pause Your Code With Breakpoints"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/coverage",
+        "name": "Find Unused JavaScript"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/javascript/source-maps",
+        "name": "Map Preprocessed Code to Source Code"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/javascript/reference",
+        "name": "JS Debugging Reference"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/snippets",
+        "name": "Snippets"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/sources",
+        "name": "Sources Panel Overview"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/javascript/background-services",
+        "name": "Debug Background Services"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/javascript/guides/blackbox-chrome-extension-scripts",
+        "name": "Blackbox Chrome Extension Scripts"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/javascript/disable",
+        "name": "Disable JavaScript"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/javascript/step-code",
+        "name": "Step Through Code"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/javascript/pretty-print",
+        "name": "Pretty-Print Minified JavaScript"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/javascript/watch-variables",
+        "name": "Watch Variables in Sources"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/evaluate-performance",
+        "name": "Get Started"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/speed/get-started",
+        "name": "Optimize Website Speed"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/rendering-tools",
+        "name": "Overview"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/reference",
+        "name": "Performance Analysis Reference"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/performance-reference",
+        "name": "Timeline Event Reference"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/rendering-tools/js-execution",
+        "name": "Speed Up JavaScript Execution"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/timeline-tool",
+        "name": "How to Use the Timeline Tool"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/rendering-tools/forced-synchronous-layouts",
+        "name": "Diagnose Forced Synchronous Layouts"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/accessibility/reference",
+        "name": "Reference"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/accessibility/navigation",
+        "name": "Navigate DevTools With Assistive Technology"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/accessibility/focus",
+        "name": "Track Which Element Has Focus"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/remote-debugging",
+        "name": "Get Started"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/remote-debugging/local-server",
+        "name": "Access Local Servers"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/remote-debugging/webviews",
+        "name": "Remote Debugging WebViews"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/memory-problems",
+        "name": "Overview"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/memory-problems/memory-101",
+        "name": "Understand Memory Terminology"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/memory-problems/heap-snapshots",
+        "name": "Record Heap Snapshots"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/memory-problems/allocation-profiler",
+        "name": "Use the Allocation Profiler"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/media-panel",
+        "name": "Media"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/workspaces",
+        "name": "Workspaces"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/progressive-web-apps",
+        "name": "Progressive Web Apps"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/security",
+        "name": "Security"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/shortcuts",
+        "name": "Keyboard Shortcuts"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/resources",
+        "name": "Resources"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/customize",
+        "name": "Overview"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/customize/dark-theme",
+        "name": "Dark Theme"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools/customize/placement",
+        "name": "Change Placement"
+    },
+    {
+        "href": "https://developer.chrome.com/devtools/docs/integrating",
+        "name": "Integrating with DevTools and Chrome"
+    },
+    {
+        "href": "https://developer.chrome.com/extensions/devtools",
+        "name": "DevTools Extensions API"
+    },
+    {
+        "href": "https://developer.chrome.com/devtools/docs/debugger-protocol",
+        "name": "Debugger Protocol"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-devtools",
+        "name": "Chrome DevTools"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/lighthouse",
+        "name": "Lighthouse"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/puppeteer",
+        "name": "Puppeteer"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/workbox",
+        "name": "Workbox"
+    },
+    {
+        "href": "https://developers.google.com/web/tools/chrome-user-experience-report",
+        "name": "Chrome User Experience Report"
+    }
+]
