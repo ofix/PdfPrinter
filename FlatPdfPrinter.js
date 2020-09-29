@@ -26,24 +26,24 @@ class FlatPdfPrinter {
         console.log(this.options);
         this.cacheFile = this.options.pdfName + '.json'
     }
-    async run() {
+    run() {
         if (fs.existsSync(this.cacheFile)) {
             let data = fs.readFileSync(this.cacheFile, 'utf-8');
             this.chapterEntries = JSON.parse(data);
-            await this.onFinishPdfEntry(null, this);
+            this.onFinishPdfEntry(null, this);
         } else {
-            await this.visitEntry(this.onFinishPdfEntry);
+            this.visitEntry(this.onFinishPdfEntry);
         }
         let launchOptions = {
             executablePath: chromePath,
-            devTools: true
+            devtools: false
         };
         puppeteer.launch(launchOptions).then(async browser => {
             await this.printChapters(browser, this.chapterEntries);
             await browser.close();
-        }).then(async () => {
+        }).then(() => {
             return;
-            await this.mergePartPdfFiles(this.chapterEntries, this.options.pdfName);
+            this.mergePartPdfFiles(this.chapterEntries, this.options.pdfName);
             console.log("+++++ finish merge file ", this.options.pdfName + ".pdf");
         });
 
@@ -83,13 +83,14 @@ class FlatPdfPrinter {
         await page.setViewport({
             width: 1920,
             height: 1080,
-            deviceScaleFactor: 1,
+            // deviceScaleFactor: 1,
         });
-        await page.goto(url, { waitUntil: 'networkidle2' });
+        await page.goto(url, { waitUntil: 'networkidle0' });
         await page.emulateMediaType('print');
         await page.evaluate((removePrintCss, printContainer, dirtyInnerElements, dirtyOuterElements) => {
             //移除打印样式
             if (removePrintCss) {
+                console.log("REMOVE PRINT CSS");
                 for (var i = document.styleSheets[0].rules.length - 1; i > 0; i--) {
                     if (document.styleSheets[0].rules[i].cssText.indexOf("@media print") != -1) {
                         document.styleSheets[0].deleteRule(i);
@@ -97,38 +98,32 @@ class FlatPdfPrinter {
                 }
             }
             //移除脏元素
-            console.log("PRINT_CONTAINTER ", printContainer);
-            console.log("DIRTY_INNER_ELEMENTS ", dirtyInnerElements);
-            console.log("DIRTY_OUTER_ELEMENTS ", dirtyOuterElements);
-            const elements = document.querySelector('body').children;
-            let isId = printContainer.substr(0, 1) == '#' ? true : false;
-            let printContainerId = printContainer.substring(1);
-            for (let i = 0; i < elements.length; i++) {
-                if (isId) {
-                    if (elements[i].id != printContainerId) {
-                        elements[i].style.display = 'none';
-                        console.log("REMOVE UNUSED ELEMENT");
-                    } else {
-                        for (let j = 0; j < dirtyInnerElements.length; j++) {
-                            //let childIsId = invisible_node_children[j].substr(0, 1) == '#' ? true : false;
-                            let child = document.querySelector(dirtyInnerElements[j]);
-                            console.log(dirtyInnerElements[j]);
-                            console.log(child);
-                            // if (child != undefined) {
-                            //     child.sytle.display = 'none';
-                            // }
-                        }
-                        for (let j = 0; j < dirtyOuterElements.length; j++) {
-                            //let childIsId = invisible_node_children[j].substr(0, 1) == '#' ? true : false;
-                            let child = document.querySelector(dirtyOuterElements[j]);
-                            console.log(dirtyOuterElements[j]);
-                            console.log(child);
-                            // if (child != undefined) {
-                            //     child.sytle.display = 'none';
-                            // }
+            if (printContainer != 'body') {
+                const elements = document.querySelector('body').children;
+                let isId = printContainer.substr(0, 1) == '#' ? true : false;
+                let printContainerId = printContainer.substring(1);
+                for (let i = 0; i < elements.length; i++) {
+                    if (isId) {
+                        if (elements[i].id != printContainerId) {
+                            elements[i].style.display = 'none';
+                            console.log("REMOVE UNUSED ELEMENT");
+                        } else {
+
                         }
                     }
                 }
+            }
+            for (let j = 0; j < dirtyInnerElements.length; j++) {
+                const innerNodes = document.querySelectorAll(dirtyInnerElements[j]);
+                innerNodes.forEach(function (node) {
+                    node.remove();
+                });
+            }
+            for (let j = 0; j < dirtyOuterElements.length; j++) {
+                const outerNodes = document.querySelectorAll(dirtyOuterElements[j]);
+                outerNodes.forEach(function (node) {
+                    node.remove();
+                });
             }
         }, this.options.removePrintCss, this.options.printContainer, this.options.dirtyInnerElements, this.options.dirtyOuterElements);
         page.on('console', msg => console.log(msg.text()));
